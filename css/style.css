@@ -1,0 +1,200 @@
+/* Additional Styles */
+body {
+    font-family: 'Helvetica Neue', sans-serif;
+    /* Use Helvetica Neue as the primary font */
+}
+
+.contact-form-container h2,
+.contact-form-container p,
+.contact-form-container li {
+    font-family: 'Helvetica Neue', sans-serif;
+    /* Use Helvetica Neue for headings, paragraphs, and list items */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .contact-form-container {
+        width: 90%;
+        margin-right: 0;
+        margin-left: 0;
+    }
+}
+
+
+/* Reset and General Styles */
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+
+h1 {
+    text-align: center;
+    padding: 5%;
+}
+
+hr {
+    width: 100%;
+    border: none;
+    height: 5px;
+    background-color: lightgrey;
+    margin: 0;
+}
+
+/* Top Navigation */
+.topnav {
+    overflow: hidden;
+    background-color: #f2f2f2;
+}
+
+.topnav a {
+    float: left;
+    display: block;
+    color: #333;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.topnav a.active {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.topnav-right {
+    float: right;
+}
+
+/* Main Container */
+.main-container {
+    display: flex;
+    justify-content: center;
+    /* Center items horizontally */
+    align-items: flex-start;
+    margin-top: 20px;
+}
+
+/* Banner */
+.banner {
+    overflow: hidden;
+    /* Ensure only one image is visible at a time */
+    flex: 0 0 calc(75% - 25px);
+    /* Take 75% of the available space and subtract the space between */
+    margin-right: 25px;
+    /* Add space to the right of the banner */
+}
+
+.banner img {
+    width: 80%;
+    /* Ensure image fills the banner */
+    height: auto;
+    /* Maintain aspect ratio */
+}
+
+/* Adjust the position of the images */
+.banner img {
+    display: block;
+    /* Ensure each image takes up the full width of its container */
+}
+
+/* Form and Form Elements */
+.contact-form-container {
+    flex: 0 0 calc(25% - 25px);
+    /* Take 50% of the available space and subtract the space between */
+    margin-left: 25px;
+    /* Add space to the left of the form */
+    background-color: lightgray;
+    /* Background color for the form container */
+    padding: 50px;
+    /* Add padding for spacing */
+    margin-right: 100px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Additional Styles */
+.contact-form-container {
+    background-color: #f9f9f9;
+    /* Background color for the form container */
+    padding: 20px;
+    /* Add padding for spacing */
+}
+
+.contact-form-container h2 {
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.contact-form-container p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.contact-form-container ul {
+    padding-left: 20px;
+    margin-bottom: 20px;
+}
+
+.contact-form-container li {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .contact-form-container {
+        width: 90%;
+        margin-right: 0;
+        margin-left: 0;
+    }
+}
+
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .main-container {
+        flex-direction: column;
+        align-items: center;
+        /* Center items vertically */
+    }
+
+    .banner,
+    .contact-form-container {
+        width: 90%;
+        margin-right: 0;
+        margin-left: 0;
+    }
+}
